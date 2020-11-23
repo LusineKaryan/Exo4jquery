@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1"></div> 
+    <div class="div2"></div>    
+    <div class="div3"></div>   
+    <div class="div4"></div>
+
+    <script src="js/jquery.js"></script>
+    
+    <script>
+            $(function(){    
+            $('div').css({width:'150px',
+                        height:'150px',
+                        border: '1px solid'
+                        });
+            $('.div1').on('click',function(){
+                $('.div1').css({backgroundColor:'red'});
+            });
+            $('.div2').on('click',function(){
+                $('.div2').css({backgroundColor:'rgb(16,99,30)'});
+            });
+            $('.div3').on('click',function(){
+                $('.div3').css({backgroundColor:'#523456'});
+            });
+            $('.div4').on('click',function(){
+                $('.div4').css({backgroundColor:'#a11'});
+            });
+            })
+    </script>
+</body>
+</html>

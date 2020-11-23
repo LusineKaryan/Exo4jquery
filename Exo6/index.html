@@ -6,19 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <div class="conteneur">
         <p id="p1">Un paragraphe écrit en HTML</p>
-        <p id="p2">Un paragraphe ajouté</p>
+        <p id="p2">Un autre paragraphe écrit en HTML</p>
     </div>
     <script src="js/jquery.js"></script>
-    
     <script>
-       
         $(document).ready(function(){
-        $("<p>Paragraphe ajouté avec prependTo()</p>").prependTo(".conteneur");
-        $("<ul><li>Element n°1</li><li>Element n°2</li></ul>").appendTo(".conteneur");
+        $("#p1").before("<p>Paragraphe ajouté avec before()</p>");
+        $("<p>Paragraph ajouté avec insertAfter()</p>").insertAfter("#p1");
         });
     </script>
-    
 </body>
 </html>

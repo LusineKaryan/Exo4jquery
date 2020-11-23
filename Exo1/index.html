@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,38 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-
-    <button id="monBouton">Bouton</button>
-    <divid="monTextarea">
-        <textarea>hvkgcghj</textarea>
-        <textarea>hvkgcghj</textarea>
-    </div>
-    
-    <p class="maclasse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic blanditiis laudantium dignissimos ipsam. Velit quae rerum accusamus incidunt repellendus quos, dignissimos officiis error sit nostrum, corporis ut nobis cumque ullam.</p>
-    <p class="maclasse">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, nemo. Voluptatem, atque labore optio aut laborum, debitis aperiam ipsa, culpa ex sequi mollitia. Deserunt tempora voluptate a! Nostrum, recusandae qui.</p>
-    
+    <textarea class="textArea" ></textarea>
+    <textarea class="textArea" ></textarea>
+    <p>On va travailler avec Jquery</p>
+    <p>C'est mon premier paragraphe</p>
    
+    <button>Cliquez moi !</button>
     <script src="js/jquery.js"></script>
+    
     <script>
-            $(function(){    
-
-            $('#monTextarea').css({ width:'150px',
-                                    height:'150px'});
-            
-         
-            $('monBouton').on('click',function(){
-                $('#monTextarea').css({bordur: '2px solid red'});
-            
-            })
-
-
-            $(function(){   
-            $('.maclass').css({ color:'green',
-                              backgroundColor:'yellow'
+       
+            $(function(){  
+            $('.textArea').css({ color:'blue',
+                                backgroundColor: 'yellow'
                         });
+            
+            $('button').on('click',function(){
+            $('.textArea').css({border:'2px red solid'});
+            }); 
 
-            $('monBouton').on('click',function(){
-                $('.maclass').css({bordur:'2px red solid'});
+            $('p').css({ color:'green',
+                        backgroundColor:'yellow'
+                        });
+          
+
+            $('button').on('click',function(){
+                $('p').css({border:'2px red solid'});
+            
+            
             });
             })
     </script>
